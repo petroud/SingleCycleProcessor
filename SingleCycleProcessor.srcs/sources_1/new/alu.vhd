@@ -78,6 +78,10 @@ begin
             when "1001" =>
                 local_Out(31) <= '0';
                 local_Out(30 downto 0) <= A(31 downto 1);
+            --Shift left, new LSB = '0'
+            when "1010" =>
+                local_Out(0) <= '0';
+                local_Out(31 downto 1) <= A(30 downto 0);
             --Rotate Left by 1 bit
             when "1100" =>
                 local_Out(31 downto 1) <= A(30 downto 0);

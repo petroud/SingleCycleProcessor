@@ -128,27 +128,24 @@ architecture Behavioral of alu_tb is
 		
 		Op <= "0001";
 		-- 2.147.483.647 - 1.147.483.647
-		-- Average Case
+		-- Average case
         A <= "01111111111111111111111111111111";
 		B <= "01000100011001010011010111111111";
 		wait for 100ns;
 		
 		------------ Testing the AND operation ------------
 		Op <= "0010";
-		-- Average Case
         A <= "00010101010010010110001010101000";
 		B <= "01000100011001010011010111111111";
 		wait for 100ns;
 		
 		------------ Testing the OR operation ------------
 		Op <= "0011";
-		-- Average Case
         A <= "01111111111111111111111111111111";
 		B <= "01000100011001010011010111111111";
 		wait for 100ns;	
 		
 		Op <= "0011";
-		-- Average Case
         A <= "01111111111111111111111111111111";
 		B <= "01111111111111111111111111111111";
 		wait for 100ns;
@@ -161,41 +158,47 @@ architecture Behavioral of alu_tb is
 		
 		------------ Testing the NAND operation ------------
 		Op <= "0110";
-		-- Average Case
         A <= "00010101010010010110001010101000";
 		B <= "01000100011001010011010111111111";
 		wait for 100ns;
 		
-		------------ Testing the SR-MSB operation ------------
+		------------ Testing the SR arithmetic operation ------------
 		Op <= "1000";
-		-- Average Case
+        A <= x"f1ffffff";
+		B <= x"00000000";
+		wait for 100ns;
+		
+		Op <= "1000";
         A <= x"7fffffff";
 		B <= x"00000000";
 		wait for 100ns;
 		
-		------------ Testing the SL operation ------------
-		Op <= "0100";
-		-- Average Case
-        A <= x"7fffffff";
+		------------ Testing the SR logic operation ------------
+		Op <= "1001";
+        A <= x"7fff7f3f";
 		B <= x"00000000";
 		wait for 100ns;
 		
 		
+		------------ Testing the SL logic operation ------------
+		Op <= "1010";
+		A <= x"3f0fffff";
+		B <= x"00000000";
+		wait for 100ns;
 		
 		
+		------------ Testing the Rotate Left opearation ------------
+		Op <= "1100";
+        A <= x"fffffff0";
+        B <= x"00000000";
+        wait for 100ns;
 		
 		
-	    -- Op <= "0011";
-	    -- Op <= "0100";
-		-- Op <= "0110";
-		-- Op <= "1000";
-		-- Op <= "1001";
-		-- Op <= "1010";
-		-- Op <= "1100";
-	    -- Op <= "1101";
-	    
-	    
-	    
+		------------ Testing the Rotate Right operation ------------
+		Op <= "1101";
+		A <= x"00fffffb";
+		B <= x"00000000";
+		wait for 100ns;	    
 	    
 
         wait;
