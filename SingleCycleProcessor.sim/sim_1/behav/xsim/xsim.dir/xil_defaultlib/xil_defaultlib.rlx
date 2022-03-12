@@ -3,4 +3,11 @@
 Oct 19 2021
 03:16:22
 C:/Users/Dimitris/Desktop/SingleCycleProcessor/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/alu.vhd,1647093193,vhdl,,,,alu,,,,,,,,
-C:/Users/Dimitris/Desktop/SingleCycleProcessor/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/alu_tb.vhd,1647094819,vhdl,,,,alu_tb,,,,,,,,
+C:/Users/Dimitris/Desktop/SingleCycleProcessor/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/alu_tb.vhd,1647096709,vhdl,,,,alu_tb,,,,,,,,
+C:/Users/Dimitris/Desktop/SingleCycleProcessor/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/decoder_5x32.vhd,1647103128,vhdl,,,,decoder_5x32,,,,,,,,
+C:/Users/Dimitris/Desktop/SingleCycleProcessor/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/decoder_5x32_tb.vhd,1647103598,vhdl,,,,decoder_5x32_tb,,,,,,,,
+C:/Users/Dimitris/Desktop/SingleCycleProcessor/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/mux_32x1.vhd,1647113401,vhdl,C:/Users/Dimitris/Desktop/SingleCycleProcessor/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/rf.vhd,,,buses,,,,,,,,
+C:/Users/Dimitris/Desktop/SingleCycleProcessor/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/register_32.vhd,1647100544,vhdl,,,,register_32,,,,,,,,
+C:/Users/Dimitris/Desktop/SingleCycleProcessor/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/register_32_tb.vhd,1647100658,vhdl,,,,register_32_tb,,,,,,,,
+C:/Users/Dimitris/Desktop/SingleCycleProcessor/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/rf.vhd,1647115126,vhdl,,,,rf,,,,,,,,
+C:/Users/Dimitris/Desktop/SingleCycleProcessor/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/rf_tb.vhd,1647115083,vhdl,,,,rf_tb,,,,,,,,
