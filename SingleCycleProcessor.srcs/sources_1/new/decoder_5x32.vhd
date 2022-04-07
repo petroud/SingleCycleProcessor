@@ -3,7 +3,7 @@
 -- Create Date: 03/11/2022 02:49:28 PM
 -- Module Name: Decoder 5x32 Module
 -- Project Name: SingleCycleProcessor
--- Revision 1.00 - File Created
+-- Revision 1.1 - Updated behavioral to be more efficient
 ----------------------------------------------------------------------------------
 
 
@@ -20,13 +20,8 @@ end decoder_5x32;
 
 architecture Behavioral of decoder_5x32 is
 
-signal local_out: std_logic_vector(31 downto 0);
 begin
-
-operation:
-    for i in 0 to 31 generate
-        local_out(i) <= '1' when TO_INTEGER(unsigned(input)) = i else '0';
-    end generate;
-
-    output <= local_out after 10ns;
+    
+    output <= (TO_INTEGER(unsigned(input)) => '1', others=>'0') after 10ns;
+    
 end Behavioral;

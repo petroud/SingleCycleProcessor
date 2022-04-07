@@ -1,6 +1,6 @@
 Vivado Simulator v2021.2
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: D:/Vivado/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ram_tb_behav xil_defaultlib.ram_tb -log elaborate.log 
+Running: D:/Vivado/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot proc_sc_tb_behav xil_defaultlib.proc_sc_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -13,6 +13,24 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.buses
 Compiling architecture syn of entity xil_defaultlib.RAM [ram_default]
-Compiling architecture behavioral of entity xil_defaultlib.ram_tb
-Built simulation snapshot ram_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.register_32 [register_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.pc_adder [pc_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ifstage [ifstage_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2x1_5b [mux_2x1_5b_default]
+Compiling architecture behavioral of entity xil_defaultlib.immed_converter [immed_converter_default]
+Compiling architecture behavioral of entity xil_defaultlib.decoder_5x32 [decoder_5x32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_32x1 [mux_32x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.rf [rf_default]
+Compiling architecture behavioral of entity xil_defaultlib.decstage [decstage_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.exstage [exstage_default]
+Compiling architecture behavioral of entity xil_defaultlib.memstage [memstage_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.proc_sc [proc_sc_default]
+Compiling architecture behavioral of entity xil_defaultlib.proc_sc_tb
+Built simulation snapshot proc_sc_tb_behav

@@ -18,7 +18,8 @@ entity RAM is
 		data_we : in std_logic;
 		data_addr : in std_logic_vector(10 downto 0);
 		data_din : in std_logic_vector(31 downto 0);
-		data_dout : out std_logic_vector(31 downto 0));
+		data_dout : out std_logic_vector(31 downto 0)
+	);
 end RAM;
 architecture syn of RAM is
 	type ram_type is array (2047 downto 0) of std_logic_vector (31 downto 0);
@@ -36,7 +37,7 @@ architecture syn of RAM is
 		end loop;
 	return ram;
 	end function;
-	signal RAM: ram_type := InitRamFromFile("rom.data");
+	signal RAM: ram_type := InitRamFromFile("ram.data");
 	begin
 		process (clk)
 		begin

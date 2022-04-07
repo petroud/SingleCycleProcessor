@@ -68,8 +68,11 @@ begin
             when "0100" =>
                 local_Out <= NOT A;
             --NAND
-            when "0110" =>
+            when "0101" =>
                 local_Out <= A NAND B;
+            --NOR
+            when "0110" =>
+                local_Out <= A NOR B;
             --Shift right, new MSB = old MSB
             when "1000" =>
                 local_Out(31) <= A(31);
