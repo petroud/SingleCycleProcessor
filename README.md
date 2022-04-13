@@ -1,4 +1,4 @@
-# SingleCycleProcessor
+# Single Cycle Processor
 The project focuses on the implementation of a Single Cycle Processor with a MIPS-like ISA x32. The processor breaks into 3 main parts:
 <ol>
   <li>DATAPATH</li>  The <strong>datapath</strong> consists of 4 stages. Generally datapath is responsible for performing logical and arithmetic operations, keeping record of the program counter register and the register file, breaking instructions into parts that are later transformed into control signals and handling memory transactions. <br>
