@@ -1,0 +1,7 @@
+li r5, 8         // Expecting to see 8 in r5
+li r6, 16        // Expecting to see 16 in r6
+addi r5, r5, 8   // Expecting to see 16 in r5
+beq r5, r6, 1    // Expecting the next command not to be executed
+li r10, 0xabcd   // Expecting to see 0xabcd in r10 when executed
+li r11, 0xafdc   // Expecting to see 0xafdc in r11 
+bne r5, r11, -3  // Returning back to execute li r10, 0xabcd (Infinite Loop)

@@ -1,0 +1,6 @@
+addi r5, r0, 8         //Expecting to see decimal 8 in r5
+ori r3, r0, 0xABCD     //Expecting to see 0xABCD in r3
+sw r3, 4(r0)           //Expecting the word ABCD to be written in mem_addr 1028
+lw r10, -4(r5)         //Expecting the word ABCD to be loaded in r10
+lb r16, 4(r0)          //Expecting the byte CD to be loaded in r16
+nand r4, r10, r16      //Expecting the NAND operation result in r4
